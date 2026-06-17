@@ -481,7 +481,12 @@ export default function Home() {
           Toggle Footer
         </button>
       )}
-      <main className="grid text-white h-screen bg-[linear-gradient(to_bottom,hsl(220,_65%,_5%)_0%,hsl(220,_65%,_3.52%)_50%,hsl(220,_65%,_10%)_100%)]">
+      <main
+        className="grid text-white h-screen grid-cols-9 bg-[linear-gradient(to_bottom,hsl(220,_65%,_5%)_0%,hsl(220,_65%,_3.52%)_50%,hsl(220,_65%,_10%)_100%)]"
+        style={{
+          gridAutoRows: "1fr",
+        }}
+      >
         {json.components.map((comp) => {
           return <RenderComponent {...comp} key={comp.compName} />;
         })}
