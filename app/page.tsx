@@ -3,6 +3,7 @@
 import ContentBox from "@/components/ContentBox";
 import NavBar from "@/components/NavBar";
 import { useState } from "react";
+import { styles } from "./styles";
 const components = {
   nav: NavBar,
   contentBox: ContentBox,
@@ -228,8 +229,7 @@ const jsonLayout2 = {
       props: {
         title: "LAB OPERATIONS CENTER",
       },
-      cssProps:
-        "col-span-9 bg-gradient-to-r from-cyan-400 rounded-xl via-teal-400 to-green-400 mt-2 text-black row-span-1 flex items-center justify-center",
+      cssProps: `col-span-3 md:col-span-9 mt-2 ${styles.background.banner} row-span-1 ${styles.flexbox.primary}`,
     },
     {
       compName: "NAV",
@@ -238,17 +238,13 @@ const jsonLayout2 = {
       props: {
         title: "NAVIGATION",
       },
-      cssProps:
-        "col-span-1 bg-[#182432] row-span-8 rounded-xl flex items-center justify-center",
+      cssProps: `col-span-3 row-span-1 md:col-span-1 md:row-span-8 ${styles.background.primary} ${styles.flexbox.primary}`,
     },
     {
       compName: "Hero1",
       version: 1,
       type: "contentBox",
-      props: {
-        // title: "Title",
-        // content: "Content",
-      },
+      props: {},
       components: [
         {
           compName: "Feed A",
@@ -256,8 +252,7 @@ const jsonLayout2 = {
           props: {
             content: "Feed A",
           },
-          cssProps:
-            "h-full rounded-xl bg-[#2c3240] flex items-center justify-center",
+          cssProps: `h-full ${styles.background.secondary} ${styles.flexbox.primary}`,
         },
         {
           compName: "Feed B",
@@ -265,8 +260,7 @@ const jsonLayout2 = {
           props: {
             content: "Feed B",
           },
-          cssProps:
-            "h-full rounded-xl bg-[#2c3240] flex items-center justify-center",
+          cssProps: `h-full ${styles.background.secondary} ${styles.flexbox.primary}`,
         },
         {
           compName: "Feed C",
@@ -274,8 +268,7 @@ const jsonLayout2 = {
           props: {
             content: "Feed C",
           },
-          cssProps:
-            "h-full rounded-xl bg-[#2c3240] flex items-center justify-center",
+          cssProps: `h-full ${styles.background.secondary} ${styles.flexbox.primary}`,
         },
         {
           compName: "Feed D",
@@ -283,52 +276,10 @@ const jsonLayout2 = {
           props: {
             content: "Feed D",
           },
-          cssProps:
-            "h-full rounded-xl bg-[#2c3240] flex items-center justify-center",
+          cssProps: `h-full ${styles.background.secondary} ${styles.flexbox.primary}`,
         },
-        // {
-        //   compName: "div5",
-        //   type: "contentBox",
-        //   props: {
-        //     content: "div5",
-        //   },
-        //   cssProps: "h-1/2",
-        // },
-        // {
-        //   compName: "div6",
-        //   type: "contentBox",
-        //   props: {
-        //     content: "div6",
-        //   },
-        //   cssProps: "h-1/2",
-        // },
-        // {
-        //   compName: "div7",
-        //   type: "contentBox",
-        //   props: {
-        //     content: "div7",
-        //   },
-        //   cssProps: "h-1/2",
-        // },
-        // {
-        //   compName: "div8",
-        //   type: "contentBox",
-        //   props: {
-        //     content: "div8",
-        //   },
-        //   cssProps: "h-1/2",
-        // },
-        // {
-        //   compName: "div9",
-        //   type: "contentBox",
-        //   props: {
-        //     content: "div9",
-        //   },
-        //   cssProps: "h-1/2",
-        // },
       ],
-      cssProps:
-        "col-span-4 grid rounded-xl bg-[#182432] grid-cols-2 gap-2 p-2 row-span-5 text-center flex items-center justify-center",
+      cssProps: `col-span-3 md:col-span-4 grid grid-cols-2 gap-2 p-2 row-span-5 ${styles.background.primary} ${styles.flexbox.primary}`,
     },
     {
       compName: "Hero2",
@@ -336,10 +287,8 @@ const jsonLayout2 = {
       type: "contentBox",
       props: {
         title: "ALERT MATRIX",
-        // content: "Content",
       },
-      cssProps:
-        "col-span-4 bg-[#182432] row-span-3 rounded-xl text-center flex items-center justify-center",
+      cssProps: `md:col-span-4 col-span-3 row-span-3 ${styles.background.primary} ${styles.flexbox.primary}`,
     },
     {
       compName: "Hero3",
@@ -347,10 +296,8 @@ const jsonLayout2 = {
       type: "contentBox",
       props: {
         title: "EVENT LOGS",
-        // content: "Content",
       },
-      cssProps:
-        "col-span-4 row-span-5 rounded-xl bg-[#182432] text-center flex items-center justify-center",
+      cssProps: `col-span-3 md:col-span-4 row-span-5 ${styles.background.primary} ${styles.flexbox.primary}`,
     },
     {
       compName: "Hero4",
@@ -358,10 +305,8 @@ const jsonLayout2 = {
       type: "contentBox",
       props: {
         title: "ANALYTICS",
-        // content: "Content",
       },
-      cssProps:
-        "col-span-4 row-span-3 bg-[#182432] rounded-xl text-center flex items-center justify-center",
+      cssProps: `col-span-3 md:col-span-4 row-span-3 ${styles.background.primary} ${styles.flexbox.primary}`,
     },
     {
       compName: "Left_Section",
@@ -370,82 +315,7 @@ const jsonLayout2 = {
       props: {
         title: "STATUS",
       },
-      cssProps:
-        "col-span-2 flex items-center justify-center row-span-2 bg-[#182432] rounded-xl text-center",
-      // components: [
-      //   {
-      //     compName: "div1",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div1",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div2",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div2",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div3",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div3",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div4",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div4",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div5",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div5",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div6",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div6",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div7",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div7",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div8",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div8",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div9",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div9",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      // ],
+      cssProps: `col-span-3 md:col-span-2 row-span-2 ${styles.flexbox.primary} ${styles.background.primary}`,
     },
     {
       compName: "middle_Section",
@@ -454,82 +324,7 @@ const jsonLayout2 = {
       props: {
         title: "PIPELINE",
       },
-      cssProps:
-        "col-span-5 row-span-2 flex items-center justify-center bg-[#182432] rounded-xl text-center overflow-hidden",
-      // components: [
-      //   {
-      //     compName: "div1",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div1",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div2",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div2",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div3",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div3",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div4",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div4",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div5",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div5",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div6",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div6",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div7",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div7",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div8",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div8",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div9",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div9",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      // ],
+      cssProps: `col-span-3 md:col-span-5 row-span-2 ${styles.background.primary} ${styles.flexbox.primary} overflow-hidden`,
     },
     {
       compName: "Right_Section",
@@ -538,92 +333,8 @@ const jsonLayout2 = {
       props: {
         title: "QUEUE",
       },
-      cssProps:
-        "col-span-2 row-span-2 flex items-center justify-center bg-[#182432] rounded-xl text-center overflow-hidden",
-      // components: [
-      //   {
-      //     compName: "div1",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div1",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div2",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div2",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div3",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div3",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div4",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div4",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div5",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div5",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div6",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div6",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div7",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div7",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div8",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div8",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      //   {
-      //     compName: "div9",
-      //     type: "contentBox",
-      //     props: {
-      //       content: "div9",
-      //     },
-      //     cssProps: "h-1/2",
-      //   },
-      // ],
+      cssProps: `col-span-3 md:col-span-2 row-span-2 ${styles.flexbox.primary} ${styles.background.primary} overflow-hidden`,
     },
-    // {
-    //   compName: "Footer",
-    //   version: 1,
-    //   type: "contentBox",
-    //   props: {
-    //     title: "Footer",
-    //   },
-    //   cssProps: "col-span-9 row-span-1 text-center row-span-1",
-    // },
   ],
   props: {},
   cssProps:
@@ -694,7 +405,7 @@ export default function Home() {
         </button>
       )} */}
       <main
-        className="grid gap-2 text-white h-screen grid-cols-9 bg-[linear-gradient(to_bottom,hsl(220,_65%,_5%)_0%,hsl(220,_65%,_3.52%)_50%,hsl(220,_65%,_10%)_100%)]"
+        className="grid gap-2 text-white min-h-screen grid-cols-3 md:grid-cols-9 bg-[linear-gradient(to_bottom,hsl(220,_65%,_5%)_0%,hsl(220,_65%,_3.52%)_50%,hsl(220,_65%,_10%)_100%)]"
         style={{
           gridAutoRows: "1fr",
         }}
